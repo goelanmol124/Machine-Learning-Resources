@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Learning Path Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            line-height: 1.6;
+            color: var(--primary);
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            background: var(--primary);
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .pathway {
+            border-left: 4px solid var(--secondary);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .resource-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+
+        .beginner { background: #d4edda; color: #155724; }
+        .intermediate { background: #cce5ff; color: #004085; }
+        .advanced { background: #f8d7da; color: #721c24; }
+
+        .hidden-gem {
+            border: 2px solid #ffeeba;
+            background: #fff3cd;
+        }
+
+        h2, h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-robot"></i> Machine Learning Learning Path</h1>
+            <p>Comprehensive guide curated from best resources and community recommendations</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Skill Level Section -->
+        <section class="card">
+            <h2><i class="fas fa-layer-group"></i> Skill Level Pathways</h2>
+            <div class="grid">
+                <!-- Beginner -->
+                <div class="resource-card beginner">
+                    <div class="badge beginner">Beginner</div>
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li>Start with theory: <a href="#">Andrew Ng's Course</a></li>
+                        <li>Practical introduction: <a href="#">Kaggle Learn</a></li>
+                        <li>Visual learning: <a href="#">StatQuest YouTube</a></li>
+                    </ul>
+                    <div class="pathway">
+                        <strong>Recommended Path:</strong>
+                        <p>Basic Python → ML Theory → Simple Projects</p>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="resource-card intermediate">
+                    <div class="badge intermediate">Intermediate</div>
+                    <h3>Specialization Phase</h3>
+                    <ul>
+                        <li>Deep Learning: <a href="#">Fast.ai</a></li>
+                        <li>Classic ML: <a href="#">Scikit-Learn</a></li>
+                        <li>Computer Vision: <a href="#">CS231n</a></li>
+                    </ul>
+                    <div class="pathway">
+                        <strong>Recommended Path:</strong>
+                        <p>Choose Domain → Advanced Projects → Competitions</p>
+                    </div>
+                </div>
+
+                <!-- Advanced -->
+                <div class="resource-card advanced">
+                    <div class="badge advanced">Advanced</div>
+                    <h3>Expert Level</h3>
+                    <ul>
+                        <li>Research: <a href="#">ESL Book</a></li>
+                        <li>SOTA Methods: <a href="#">Research Papers</a></li>
+                        <li>Production: <a href="#">MLOps Tools</a></li>
+                    </ul>
+                    <div class="pathway">
+                        <strong>Recommended Path:</strong>
+                        <p>Research Focus → Paper Implementation → Contributions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Gems Section -->
+        <section class="card hidden-gem">
+            <h2><i class="fas fa-gem"></i> Hidden Gems & Underrated Resources</h2>
+            <div class="grid">
+                <div class="resource-card">
+                    <h3>UC Berkeley CS189</h3>
+                    <p>Complete course materials available for free</p>
+                    <ul>
+                        <li>Lecture notes</li>
+                        <li>Problem sets</li>
+                        <li>Video lectures</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Ben-David's Theory Book</h3>
+                    <p>Deep theoretical foundation with practical algorithms</p>
+                    <ul>
+                        <li>Free PDF available</li>
+                        <li>Video companion</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Fairlearn Library</h3>
+                    <p>Essential for ethical AI development</p>
+                    <ul>
+                        <li>Bias mitigation</li>
+                        <li>Model fairness</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Style Section -->
+        <section class="card">
+            <h2><i class="fas fa-user-graduate"></i> Learning Style Recommendations</h2>
+            <div class="grid">
+                <div class="resource-card">
+                    <h3>Visual Learners</h3>
+                    <ul>
+                        <li>StatQuest YouTube</li>
+                        <li>3Blue1Brown Math</li>
+                        <li>CS231n Visualizations</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Hands-On Learners</h3>
+                    <ul>
+                        <li>Kaggle Competitions</li>
+                        <li>Fast.ai Projects</li>
+                        <li>ML Engineering Repos</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Theory-Oriented</h3>
+                    <ul>
+                        <li>Bishop's PRML</li>
+                        <li>ESL Textbook</li>
+                        <li>Research Papers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="card">
+            <h3>References & Citations</h3>
+            <ul>
+                <li>Reddit ML Community Discussions</li>
+                <li>University Course Materials</li>
+                <li>Expert Book Recommendations</li>
+            </ul>
+            <p>Note: All resources are community-verified and regularly updated</p>
+        </div>
+    </footer>
+</body>
+</html>
